@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import HomeScreen from "../screens/main/HomeScreen";
 
-export default function HomePage() {
+export default function Index() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Welcome to Expo Router v2!</Text>
+    <View style={{ flex: 1, position: "relative" }}>
+      <HomeScreen />
     </View>
   );
 }
