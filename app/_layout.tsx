@@ -1,14 +1,14 @@
 import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, View } from "react-native";
+import MainNavi from "../components/navigation/MainNavi";
 
 export default function RootLayout() {
   return (
-    <>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </>
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={{ flex: 1 }}>
+        <MainNavi />
+        <Stack screenOptions={{ headerShown: false }} />
+      </View>
+    </SafeAreaView>
   );
 }
